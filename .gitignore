@@ -1,0 +1,38 @@
+# Local runtimes and downloaded third-party dependencies
+.venv/
+venv/
+tmp/
+external/
+vendor/
+weights/
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+.env
+.env.*
+!.env.example
+
+# Python build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Rebuildable deliverables; original selected recordings are tracked.
+media/edit/
+media/output/
+media/video_verification.json
+runs/
+output/
+*.drp
+*.dra
+
+# Editor and operating-system state
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

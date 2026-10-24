@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "diag_t03_s00",
+  "title_ja": "ボウルをコンロへ",
+  "instruction": "Put the bowl on the stove",
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "bddl_relative_path": "libero_goal/put_the_bowl_on_the_stove_light_11.bddl",
+  "bddl_sha256": "fc44642dc279e08e881e6bdc05e81cd4bfd40d7638639166dfeea30855517c19",
+  "env_seed": 20260909,
+  "policy_seed": 20260909,
+  "initialization": "load_initial_state",
+  "initial_state_sha256": "5b071f3bb26bf0ce3b866621d8c9037d793aae5d25f9ae686a1d9048c4e56b88",
+  "post_settle_state_sha256": "7e92a3784015cfbc8493c3884561096ac140adce43594d40a7e389d9d40a5409",
+  "controller_initial_joint": [
+    0.0,
+    -0.161037389,
+    0.0,
+    -2.44459747,
+    0.0,
+    2.2267522,
+    0.7853981633974483
+  ],
+  "settle_steps": 10,
+  "control_hz": 20,
+  "steps": 86,
+  "duration_seconds": 4.3,
+  "expected": {
+    "goal_reached": true,
+    "collided": false,
+    "collision_free_success": true
+  },
+  "collision_rule": "Non-target object L1 displacement from post-settle pose exceeds 0.001 m; this is not a general collision/contact test.",
+  "image_orientation": "Source display images rotate raw observations by 180 degrees; policy inputs were unchanged.",
+  "video_alignment": "Each frame is the pre-action observation; the final post-action goal state may not appear in the last frame.",
+  "source_videos": {
+    "agentview": {
+      "sha256": "540fd68192c7e57d546bff196327a6dc9cb3855544c23a790bbba7a154fbf767",
+      "frames": 86,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    },
+    "wrist": {
+      "sha256": "7b0b6168b1afe80bc8f916247aba3e1f57ecc49270145bfd84e7ad80afa594cc",
+      "frames": 86,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    }
+  },
+  "trajectory_sha256": "811846b4cc367e8f41425b9a93629b3bbd97fdb44ecefca8fbe2506238ce2f77",
+  "original_trajectory_sha256": "42fbfe07d8469b1977a95af4d187c8c3da67a26347ebc5a3225e1cd50ea83bf3"
+}

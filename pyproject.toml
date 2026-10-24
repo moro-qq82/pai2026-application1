@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pai-final-demo"
+version = "0.1.0"
+description = "A small robotics demo with selected rollout recordings and reproducible video assembly"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+video = ["imageio-ffmpeg==0.6.0", "Pillow>=10,<13"]
+
+[project.scripts]
+pai-demo = "pai_demo.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

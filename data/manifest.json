@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "description": "Eight selected previously recorded model rollouts; not an unbiased evaluation set.",
+  "control_hz": 20,
+  "recording_fps": 20,
+  "source_resolution": [
+    128,
+    128
+  ],
+  "source_model_identity_sha256": "d343340fcbda18b4ed8030d101ff6ec4d1b445bf08bb38766c4e676e7725d55e",
+  "episodes": [
+    {
+      "order": 1,
+      "case_id": "diag_t00_s00",
+      "title_ja": "棚の黒いボウルを皿へ",
+      "duration_seconds": 6.45,
+      "episode_dir": "data/episodes/diag_t00_s00",
+      "metadata_sha256": "8dcf0d969f6e59e22e96d50ead9b7994372e73692a0667c8387b30ca8d9cf498",
+      "trajectory_sha256": "1b84000cd21173763d8f7585f68adf37262d34a0a1ec6a5c1c7e52f0f02070d9",
+      "source_videos": {
+        "agentview": {
+          "sha256": "47155a3ecaeb7c29d6b1a56f5f0d16d9ec058f88c2c911a0cfa1b37db3c26e45",
+          "frames": 129,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "a8efbfb1c009614c7627f4772b7d00f83b35e85f375475495c7b446fe5459f1c",
+          "frames": 129,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 2,
+      "case_id": "diag_t01_s00",
+      "title_ja": "トマトソースをかごへ",
+      "duration_seconds": 6.5,
+      "episode_dir": "data/episodes/diag_t01_s00",
+      "metadata_sha256": "6983163088eef5d7d8d5ef96a783bf4869a2c434026c13b3cc45670881db311e",
+      "trajectory_sha256": "5d274a2d3b1c21ca4796e0001c893c72fd83302c4b2b030bfb5bafd14f6adfc0",
+      "source_videos": {
+        "agentview": {
+          "sha256": "5e5e5089c730fb719ff27d4d9a3ea215dd2cc9ff0d3fcdb498c5de1e9775d701",
+          "frames": 130,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "465f65b06d3f7974d62eb6797937104150b543ef5490c544472780f04b123436",
+          "frames": 130,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 3,
+      "case_id": "diag_t02_s00",
+      "title_ja": "牛乳をかごへ",
+      "duration_seconds": 6.3,
+      "episode_dir": "data/episodes/diag_t02_s00",
+      "metadata_sha256": "caea60160090c38af2af023cba5307d58a067a53c41c1ed65c1a5ae346df77ac",
+      "trajectory_sha256": "0468f283ee0e69113028c6ea3fbba36945faed4e8b785ef8dbf4a9d398a93a25",
+      "source_videos": {
+        "agentview": {
+          "sha256": "46c1da643b97626da319d05573794af9b09084565566af164e6825c998cd9ec6",
+          "frames": 126,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "015fd1acf2e9c0426401f4413ff58addef6c701e797a4911c0c98079427b8fbb",
+          "frames": 126,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 4,
+      "case_id": "diag_t03_s00",
+      "title_ja": "ボウルをコンロへ",
+      "duration_seconds": 4.3,
+      "episode_dir": "data/episodes/diag_t03_s00",
+      "metadata_sha256": "999b861629ad89d63ef3990628f16505a5c0fafbf8f1bfa82065579ee72f2bc9",
+      "trajectory_sha256": "811846b4cc367e8f41425b9a93629b3bbd97fdb44ecefca8fbe2506238ce2f77",
+      "source_videos": {
+        "agentview": {
+          "sha256": "540fd68192c7e57d546bff196327a6dc9cb3855544c23a790bbba7a154fbf767",
+          "frames": 86,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "7b0b6168b1afe80bc8f916247aba3e1f57ecc49270145bfd84e7ad80afa594cc",
+          "frames": 86,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 5,
+      "case_id": "diag390_t12_e118",
+      "title_ja": "引き出しを開けてボウルを収納",
+      "duration_seconds": 8.8,
+      "episode_dir": "data/episodes/diag390_t12_e118",
+      "metadata_sha256": "2a793cfcbbf36023dccfa936ffb288aadfc4a924e648f18d69d974fd99d4c017",
+      "trajectory_sha256": "4e30d0f2b801964ed2e47b9ef58b7de2cf36c91bd3f3cbd1fbfb5d5b9c8e3472",
+      "source_videos": {
+        "agentview": {
+          "sha256": "30a2e374491c4e44dcd07f50d88df387efa2afe8dfcf9a5b3213c095151b855b",
+          "frames": 176,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "a861efd214bd03fef60e327f7d270e67baa8b5294b1b4f6086587ce806ccaa45",
+          "frames": 176,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 6,
+      "case_id": "diag390_t23_e223",
+      "title_ja": "BBQソースをかごへ：例1",
+      "duration_seconds": 6.3,
+      "episode_dir": "data/episodes/diag390_t23_e223",
+      "metadata_sha256": "3f04f2402b4ccb59cd861107a60c5044567e364f5c49366bbdf647d59233b210",
+      "trajectory_sha256": "f76591142429e8f6ddd46f632f1078832372df0e76c799fd73fac6996de51383",
+      "source_videos": {
+        "agentview": {
+          "sha256": "a9cc820b89194502a828464de11156d10efd3bc56b7b7f665c1db2262125b21d",
+          "frames": 126,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "0ed7668293fb9dc4968622f24fb2fa20dcf04681586a14cc5002b61b853a471a",
+          "frames": 126,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 7,
+      "case_id": "diag390_t23_e225",
+      "title_ja": "BBQソースをかごへ：例2",
+      "duration_seconds": 6.35,
+      "episode_dir": "data/episodes/diag390_t23_e225",
+      "metadata_sha256": "04130b2eeb6e96060b7f1a71a0d1b4e25ffac57d6de85fb6d80f179bbca39f5a",
+      "trajectory_sha256": "4bef9a7833b7836c02cd4985ffa047020edc7fad3f8b9f58669dc9f1ad1b6414",
+      "source_videos": {
+        "agentview": {
+          "sha256": "7904dc442ff644b8bd2ad5fd6febd24436db190050f2511bc090f3a2122ddedd",
+          "frames": 127,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "f9117c6e9c3c012d8ee618ae3a48af532990e4a0ad8602d59e6485c1df98495e",
+          "frames": 127,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    },
+    {
+      "order": 8,
+      "case_id": "diag_t01_s03",
+      "title_ja": "トマトソースをかごへ：目標未達",
+      "duration_seconds": 15.0,
+      "episode_dir": "data/episodes/diag_t01_s03",
+      "metadata_sha256": "8888162fe92a298d79945683ea62ef1ee79f07ea1f79c6a754b84796b46f0f55",
+      "trajectory_sha256": "8fd1e96289ad6ceeab96d25a8c0ae33f0b55389486e51a07d0d7398b651235d1",
+      "source_videos": {
+        "agentview": {
+          "sha256": "039522c2557993b19e0eb5635b7a3661b6cb1e9d455565cfc82aaa6b722ee1d2",
+          "frames": 300,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        },
+        "wrist": {
+          "sha256": "52e7da317510faacba3b7d3ba17cad588614a2c1da5e567ce58ef05159733ed0",
+          "frames": 300,
+          "fps": 20,
+          "width": 128,
+          "height": 128
+        }
+      }
+    }
+  ],
+  "total_action_seconds": 60.0
+}

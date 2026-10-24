@@ -1,0 +1,16 @@
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.sh text eol=lf
+*.txt text eol=lf
+# Metadata files are SHA-256 bound to the manifest. Preserve their exact bytes.
+data/manifest.json -text
+data/episodes/**/metadata.json -text
+*.mp4 binary
+*.npz binary
+*.png binary

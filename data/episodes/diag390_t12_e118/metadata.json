@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "diag390_t12_e118",
+  "title_ja": "引き出しを開けてボウルを収納",
+  "instruction": "open the top drawer and put the bowl inside",
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "bddl_relative_path": "libero_goal/open_the_top_drawer_and_put_the_bowl_inside_light_26.bddl",
+  "bddl_sha256": "5fa7436d009956e3ef3da6c339d138bfd4e248c07fe26c2fc8415febe426acc4",
+  "env_seed": 81002303,
+  "policy_seed": 81002303,
+  "initialization": "capture_reset_before_rollout",
+  "initial_state_sha256": "82513164c946e7739f2f81aa1a9b046451e6e18bd202fb0a710bea1da190ae3d",
+  "post_settle_state_sha256": "97729aa70f21bc945e642edef78c7899f0f61ac61fbd88b6a7d0076696cbe4ae",
+  "controller_initial_joint": [
+    0.0,
+    -0.161037389,
+    0.0,
+    -2.44459747,
+    0.0,
+    2.2267522,
+    0.7853981633974483
+  ],
+  "settle_steps": 10,
+  "control_hz": 20,
+  "steps": 176,
+  "duration_seconds": 8.8,
+  "expected": {
+    "goal_reached": true,
+    "collided": false,
+    "collision_free_success": true
+  },
+  "collision_rule": "Non-target object L1 displacement from post-settle pose exceeds 0.001 m; this is not a general collision/contact test.",
+  "image_orientation": "Source display images rotate raw observations by 180 degrees; policy inputs were unchanged.",
+  "video_alignment": "Each frame is the pre-action observation; the final post-action goal state may not appear in the last frame.",
+  "source_videos": {
+    "agentview": {
+      "sha256": "30a2e374491c4e44dcd07f50d88df387efa2afe8dfcf9a5b3213c095151b855b",
+      "frames": 176,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    },
+    "wrist": {
+      "sha256": "a861efd214bd03fef60e327f7d270e67baa8b5294b1b4f6086587ce806ccaa45",
+      "frames": 176,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    }
+  },
+  "trajectory_sha256": "4e30d0f2b801964ed2e47b9ef58b7de2cf36c91bd3f3cbd1fbfb5d5b9c8e3472",
+  "original_trajectory_sha256": "bcd977cd620e7d82981f34fcb76cd7a36da4748ebf9db7d9cfb1a90c80e87a9b"
+}

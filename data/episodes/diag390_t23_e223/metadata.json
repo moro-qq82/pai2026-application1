@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "diag390_t23_e223",
+  "title_ja": "BBQソースをかごへ：例1",
+  "instruction": "pick up the bbq sauce and place it in the basket",
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "bddl_relative_path": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket_table_3.bddl",
+  "bddl_sha256": "a5dbad3bca75114474e426ca6795cfea6fddb2e4d3eaff3dcceabc8242a4a864",
+  "env_seed": 81004403,
+  "policy_seed": 81004403,
+  "initialization": "capture_reset_before_rollout",
+  "initial_state_sha256": "47cc9da80672bcbed761759de9ca8254b6b1b0188f7ac627db8165e3bf19c1ed",
+  "post_settle_state_sha256": "d0c117b711790053fc01c64973ad0e491ab4dbcb555e17f49b5e7085cd22b2bd",
+  "controller_initial_joint": [
+    0.0,
+    -0.161037389,
+    0.0,
+    -2.44459747,
+    0.0,
+    2.2267522,
+    0.7853981633974483
+  ],
+  "settle_steps": 10,
+  "control_hz": 20,
+  "steps": 126,
+  "duration_seconds": 6.3,
+  "expected": {
+    "goal_reached": true,
+    "collided": false,
+    "collision_free_success": true
+  },
+  "collision_rule": "Non-target object L1 displacement from post-settle pose exceeds 0.001 m; this is not a general collision/contact test.",
+  "image_orientation": "Source display images rotate raw observations by 180 degrees; policy inputs were unchanged.",
+  "video_alignment": "Each frame is the pre-action observation; the final post-action goal state may not appear in the last frame.",
+  "source_videos": {
+    "agentview": {
+      "sha256": "a9cc820b89194502a828464de11156d10efd3bc56b7b7f665c1db2262125b21d",
+      "frames": 126,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    },
+    "wrist": {
+      "sha256": "0ed7668293fb9dc4968622f24fb2fa20dcf04681586a14cc5002b61b853a471a",
+      "frames": 126,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    }
+  },
+  "trajectory_sha256": "f76591142429e8f6ddd46f632f1078832372df0e76c799fd73fac6996de51383",
+  "original_trajectory_sha256": "7a178ea5019beb4314ce69000feafb67177250379615e0fe0705103b2f886996"
+}

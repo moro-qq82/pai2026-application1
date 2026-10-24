@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "diag_t01_s03",
+  "title_ja": "トマトソースをかごへ：目標未達",
+  "instruction": "Pick the tomato sauce and place it in the basket",
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "bddl_relative_path": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_27.bddl",
+  "bddl_sha256": "9727c6aafc957c565aaac2d9fcc8d0e0e4bab7865ee213bc1b391887e976ec1a",
+  "env_seed": 20260909,
+  "policy_seed": 20260912,
+  "initialization": "load_initial_state",
+  "initial_state_sha256": "3570eb0eddc032fc72c306085780b4dd07e62197c67090758f067a6abaabe4f4",
+  "post_settle_state_sha256": "a12e55ff1234e3ce54e2f955a8d5a27def6c49122623764e5b797fe8ba49c04b",
+  "controller_initial_joint": [
+    0.0,
+    -0.161037389,
+    0.0,
+    -2.44459747,
+    0.0,
+    2.2267522,
+    0.7853981633974483
+  ],
+  "settle_steps": 10,
+  "control_hz": 20,
+  "steps": 300,
+  "duration_seconds": 15.0,
+  "expected": {
+    "goal_reached": false,
+    "collided": false,
+    "collision_free_success": false
+  },
+  "collision_rule": "Non-target object L1 displacement from post-settle pose exceeds 0.001 m; this is not a general collision/contact test.",
+  "image_orientation": "Source display images rotate raw observations by 180 degrees; policy inputs were unchanged.",
+  "video_alignment": "Each frame is the pre-action observation; the final post-action goal state may not appear in the last frame.",
+  "source_videos": {
+    "agentview": {
+      "sha256": "039522c2557993b19e0eb5635b7a3661b6cb1e9d455565cfc82aaa6b722ee1d2",
+      "frames": 300,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    },
+    "wrist": {
+      "sha256": "52e7da317510faacba3b7d3ba17cad588614a2c1da5e567ce58ef05159733ed0",
+      "frames": 300,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    }
+  },
+  "trajectory_sha256": "8fd1e96289ad6ceeab96d25a8c0ae33f0b55389486e51a07d0d7398b651235d1",
+  "original_trajectory_sha256": "54e62643318472fa2f73ad838a318a004ec8141821f88a78edeb8c1de6195a63"
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "codec": "H.264",
+  "pixel_format": "yuv420p",
+  "audio": false,
+  "captions": false,
+  "source_manifest_sha256": "9ab54ac51e0294577870744cf2bdaf7909c1d8bd5c1b1f29dfa3d378fc2cff02",
+  "source_motion_seconds": 60.0,
+  "duration_seconds": 80.03333333333333,
+  "frames": 2401,
+  "layout": {
+    "background": "#111923",
+    "agentview": [
+      240,
+      120,
+      768,
+      768
+    ],
+    "wrist": [
+      1168,
+      248,
+      512,
+      512
+    ],
+    "suggested_caption_band": [
+      160,
+      920,
+      1600,
+      120
+    ]
+  },
+  "master": "media/output/pai_demo_no_subtitles.mp4",
+  "master_sha256": "55c87e488d4c6773969a9d97fc70d823629c7a6146d9a701f86c6e0e3a59504e",
+  "sequence": [
+    {
+      "case_id": "00_intro",
+      "title_ja": "導入用静止画",
+      "frames": 300,
+      "source_duration_seconds": 0,
+      "path": "media/edit/00_intro.mp4",
+      "start_frame": 0,
+      "end_frame_exclusive": 300,
+      "start_seconds": 0.0,
+      "end_seconds": 10.0,
+      "start_timecode": "00:00:00:00",
+      "end_timecode_exclusive": "00:00:10:00"
+    },
+    {
+      "case_id": "diag_t00_s00",
+      "title_ja": "棚の黒いボウルを皿へ",
+      "frames": 194,
+      "source_duration_seconds": 6.45,
+      "path": "media/edit/01_diag_t00_s00.mp4",
+      "start_frame": 300,
+      "end_frame_exclusive": 494,
+      "start_seconds": 10.0,
+      "end_seconds": 16.466667,
+      "start_timecode": "00:00:10:00",
+      "end_timecode_exclusive": "00:00:16:14"
+    },
+    {
+      "case_id": "diag_t01_s00",
+      "title_ja": "トマトソースをかごへ",
+      "frames": 195,
+      "source_duration_seconds": 6.5,
+      "path": "media/edit/02_diag_t01_s00.mp4",
+      "start_frame": 494,
+      "end_frame_exclusive": 689,
+      "start_seconds": 16.466667,
+      "end_seconds": 22.966667,
+      "start_timecode": "00:00:16:14",
+      "end_timecode_exclusive": "00:00:22:29"
+    },
+    {
+      "case_id": "diag_t02_s00",
+      "title_ja": "牛乳をかごへ",
+      "frames": 189,
+      "source_duration_seconds": 6.3,
+      "path": "media/edit/03_diag_t02_s00.mp4",
+      "start_frame": 689,
+      "end_frame_exclusive": 878,
+      "start_seconds": 22.966667,
+      "end_seconds": 29.266667,
+      "start_timecode": "00:00:22:29",
+      "end_timecode_exclusive": "00:00:29:08"
+    },
+    {
+      "case_id": "diag_t03_s00",
+      "title_ja": "ボウルをコンロへ",
+      "frames": 129,
+      "source_duration_seconds": 4.3,
+      "path": "media/edit/04_diag_t03_s00.mp4",
+      "start_frame": 878,
+      "end_frame_exclusive": 1007,
+      "start_seconds": 29.266667,
+      "end_seconds": 33.566667,
+      "start_timecode": "00:00:29:08",
+      "end_timecode_exclusive": "00:00:33:17"
+    },
+    {
+      "case_id": "diag390_t12_e118",
+      "title_ja": "引き出しを開けてボウルを収納",
+      "frames": 264,
+      "source_duration_seconds": 8.8,
+      "path": "media/edit/05_diag390_t12_e118.mp4",
+      "start_frame": 1007,
+      "end_frame_exclusive": 1271,
+      "start_seconds": 33.566667,
+      "end_seconds": 42.366667,
+      "start_timecode": "00:00:33:17",
+      "end_timecode_exclusive": "00:00:42:11"
+    },
+    {
+      "case_id": "diag390_t23_e223",
+      "title_ja": "BBQソースをかごへ：例1",
+      "frames": 189,
+      "source_duration_seconds": 6.3,
+      "path": "media/edit/06_diag390_t23_e223.mp4",
+      "start_frame": 1271,
+      "end_frame_exclusive": 1460,
+      "start_seconds": 42.366667,
+      "end_seconds": 48.666667,
+      "start_timecode": "00:00:42:11",
+      "end_timecode_exclusive": "00:00:48:20"
+    },
+    {
+      "case_id": "diag390_t23_e225",
+      "title_ja": "BBQソースをかごへ：例2",
+      "frames": 191,
+      "source_duration_seconds": 6.35,
+      "path": "media/edit/07_diag390_t23_e225.mp4",
+      "start_frame": 1460,
+      "end_frame_exclusive": 1651,
+      "start_seconds": 48.666667,
+      "end_seconds": 55.033333,
+      "start_timecode": "00:00:48:20",
+      "end_timecode_exclusive": "00:00:55:01"
+    },
+    {
+      "case_id": "diag_t01_s03",
+      "title_ja": "トマトソースをかごへ：目標未達",
+      "frames": 450,
+      "source_duration_seconds": 15.0,
+      "path": "media/edit/08_diag_t01_s03.mp4",
+      "start_frame": 1651,
+      "end_frame_exclusive": 2101,
+      "start_seconds": 55.033333,
+      "end_seconds": 70.033333,
+      "start_timecode": "00:00:55:01",
+      "end_timecode_exclusive": "00:01:10:01"
+    },
+    {
+      "case_id": "99_outro",
+      "title_ja": "まとめ用静止画",
+      "frames": 300,
+      "source_duration_seconds": 0,
+      "path": "media/edit/99_outro.mp4",
+      "start_frame": 2101,
+      "end_frame_exclusive": 2401,
+      "start_seconds": 70.033333,
+      "end_seconds": 80.033333,
+      "start_timecode": "00:01:10:01",
+      "end_timecode_exclusive": "00:01:20:01"
+    }
+  ],
+  "encoder": "FFmpeg 7.1 (imageio-ffmpeg 0.6.0), libx264, CRF 18, preset medium"
+}

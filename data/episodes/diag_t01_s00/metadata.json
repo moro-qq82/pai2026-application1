@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "diag_t01_s00",
+  "title_ja": "トマトソースをかごへ",
+  "instruction": "Pick the tomato sauce and place it in the basket",
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "bddl_relative_path": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_27.bddl",
+  "bddl_sha256": "9727c6aafc957c565aaac2d9fcc8d0e0e4bab7865ee213bc1b391887e976ec1a",
+  "env_seed": 20260909,
+  "policy_seed": 20260909,
+  "initialization": "load_initial_state",
+  "initial_state_sha256": "000a33b33f0beeee61ad6bc3f11f362fd5d9c6d8ecf7a7627575d9ebc775e121",
+  "post_settle_state_sha256": "a53b7c7cbfe27c39490c464b1e34b9ce56c8311488a115ab40b8237003c3a0db",
+  "controller_initial_joint": [
+    0.0,
+    -0.161037389,
+    0.0,
+    -2.44459747,
+    0.0,
+    2.2267522,
+    0.7853981633974483
+  ],
+  "settle_steps": 10,
+  "control_hz": 20,
+  "steps": 130,
+  "duration_seconds": 6.5,
+  "expected": {
+    "goal_reached": true,
+    "collided": false,
+    "collision_free_success": true
+  },
+  "collision_rule": "Non-target object L1 displacement from post-settle pose exceeds 0.001 m; this is not a general collision/contact test.",
+  "image_orientation": "Source display images rotate raw observations by 180 degrees; policy inputs were unchanged.",
+  "video_alignment": "Each frame is the pre-action observation; the final post-action goal state may not appear in the last frame.",
+  "source_videos": {
+    "agentview": {
+      "sha256": "5e5e5089c730fb719ff27d4d9a3ea215dd2cc9ff0d3fcdb498c5de1e9775d701",
+      "frames": 130,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    },
+    "wrist": {
+      "sha256": "465f65b06d3f7974d62eb6797937104150b543ef5490c544472780f04b123436",
+      "frames": 130,
+      "fps": 20,
+      "width": 128,
+      "height": 128
+    }
+  },
+  "trajectory_sha256": "5d274a2d3b1c21ca4796e0001c893c72fd83302c4b2b030bfb5bafd14f6adfc0",
+  "original_trajectory_sha256": "11c6a20d4e83b1ffb0dfac0bbf4d49eef719caa8d2b79b7967f6342261b9f415"
+}
