@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "description": "Selected facts from training and export records; not an executable training configuration.",
+  "model_label": "OpenVLA-OFT mixed_000500",
+  "base_model": {
+    "repository": "Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata",
+    "url": "https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata",
+    "name": "OpenVLA-OFT+",
+    "checkpoint_step_label": 150000
+  },
+  "first_continuation": {
+    "optimizer_updates": 4000,
+    "result_checkpoint_step_label": 154000,
+    "dataset_repository": "Sylvest/libero_plus_rlds",
+    "dataset_url": "https://huggingface.co/datasets/Sylvest/libero_plus_rlds",
+    "dataset_trajectories": 14347
+  },
+  "recorded_continuation": {
+    "arm": "mixed",
+    "checkpoint_updates": 500,
+    "planned_updates": 1000,
+    "result_checkpoint_step_label": 154500,
+    "seed": 1000,
+    "method": "supervised continuous-action imitation with L1 regression",
+    "optimizer": "AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "batch_size": 1,
+    "gradient_accumulation": 8,
+    "lora_rank": 32,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "trained_components": [
+      "LoRA adapter",
+      "action head",
+      "proprio projector"
+    ],
+    "input_camera_count": 2,
+    "input_proprio_dimensions": 8,
+    "action_dimensions": 7,
+    "action_chunk_length": 8,
+    "sampling_proportions": {
+      "original": 0.8,
+      "new": 0.2
+    },
+    "observed_training_samples": {
+      "total": 4000,
+      "original": 3200,
+      "new": 800
+    },
+    "sample_count_note": "Counts are training samples, not distinct trajectories or completed dataset epochs.",
+    "resume_input_policy": "restart streams; not bitwise equivalent to uninterrupted training"
+  },
+  "new_dataset": {
+    "trajectories": 1000,
+    "appearance_conditions": {
+      "lighting": 500,
+      "texture": 500
+    },
+    "teachers": {
+      "expert": 900,
+      "openvla": 100
+    },
+    "expert_note": "The expert controller uses simulator internal state; this is not the final model input."
+  },
+  "references": {
+    "openvla_oft_repository": "https://github.com/moojink/openvla-oft",
+    "openvla_oft_commit": "e4287e94541f459edc4feabc4e181f537cd569a8"
+  },
+  "identity": {
+    "source_model_identity_sha256": "d343340fcbda18b4ed8030d101ff6ec4d1b445bf08bb38766c4e676e7725d55e",
+    "source_export_receipt_sha256": "a0224303be741edada3217200a8e10832ea74c07df2f9f4d1b68891f09791a9c",
+    "source_data_coverage_sha256": "701f85bf2579b865e47c12c2ed495bd313c0a9ed2d4ecc90bdeaff459b0f1471",
+    "source_checkpoint_receipt_sha256": "df5aa6905c1e8c25b32e055d56580914ff994dbe04b4129015a0897515fe9b25",
+    "action_statistics_sha256": "4c9fe4685b5d8e8eb3c6a997c4176c70b61fb153bb98ddd686dc8b5369628a2b",
+    "original_dataset_info_sha256": "d30a03246c8e4c6380780fa98eb23f9cae8dce427555c2af0725d85f98a420e8",
+    "new_dataset_info_sha256": "6f9fa444be3e4396a8ac5b5f29cda207a3ac52587c3bec4551ed1cb40f778b96",
+    "trainer_sha256": "132bf973c033c4fb04d72d8058c8e3d5a84f991a7a54369b258197020edb4494",
+    "data_code_sha256": "fce80af1b28dee676491e1e7264e80ece59bbfe7cf1fb65477d5ebe665011c1f"
+  },
+  "availability": {
+    "recorded_model_weights_bundled": false,
+    "training_datasets_bundled": false,
+    "original_training_runtime_bundled": false,
+    "note": "Hashes identify source artifacts; they cannot reconstruct omitted files. This repository provides recorded episodes and a minimal replay/inference adapter."
+  }
+}

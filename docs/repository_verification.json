@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "checks": {
+    "required_files": 26,
+    "episodes": 8,
+    "source_videos": 16,
+    "checksum_files": 33,
+    "local_links": 25,
+    "task_definitions": 7,
+    "task_cases": 8
+  },
+  "errors": [],
+  "not_checked": [
+    "external libraries and assets",
+    "model weights",
+    "GPU inference and physics execution",
+    "video decoding"
+  ]
+}

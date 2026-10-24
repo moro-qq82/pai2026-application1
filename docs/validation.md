@@ -13,14 +13,27 @@
 - `scripts/check_runtime.py` の8テストがPASS。初期化順序、事前reset、保存行動の全件再生、軌道差の検出、新規推論の終了条件、不正行動拒否、パス検査、8件のデータ整合性を確認。
 - Pythonコードの構文とCLI helpを確認。公開OFTの参照版に対し推論アダプターが使用するAPIを静的照合。
 - Pythonパッケージのwheel作成に成功。Gitのindexから書き出した別フォルダでも8テストと全データ・原本映像のハッシュ照合に成功。ハッシュ対象のJSONは改行変換を無効にし、OS間の改行差による照合失敗を防いでいます。
-- 公開対象ファイルに、元限定公開の評価システム、配布資料、重み、元Git履歴、ホストの絶対パス、個人名、秘密情報らしい文字列が含まれていないことを確認。
+- 配布ファイル内に、ホスト固有の絶対パスや外部の非公開リポジトリへのコード参照がないことを確認。
 
-動画の機械検査結果は [video_verification.json](video_verification.json)、構成は [video_build.json](video_build.json) を参照してください。これらは今回生成物の記録です。再生成時の最新結果は `media/video_verification.json` と `media/edit/timeline.json` に出力されます。
+動画の機械検査結果は [video_verification.json](video_verification.json)、構成は [video_build.json](video_build.json) を参照してください。これらは字幕なし動画の生成時点の記録です。再生成時の最新結果は `media/video_verification.json` と `media/edit/timeline.json` に出力されます。
+
+## ファイルコピー後の再確認
+
+Gitで追跡するファイルだけを新しいフォルダへ書き出し、既存の生成動画をコピーせずに以下を実行しました。Python、NumPy、Pillow、FFmpeg 7.1は外部の実行環境として用意しています。
+
+| 確認 | 結果 |
+|---|---|
+| `scripts/check_repository.py` | PASS。8エピソード、16原本映像、33ファイルのハッシュ、ローカルリンク、7公開タスクの対応を確認 |
+| `scripts/check_runtime.py` | 8テストすべてPASS |
+| `scripts/build_video.py` | 字幕なしマスターを再生成。2,401フレーム、約80.03秒 |
+| `scripts/verify_video.py` | 原本16本・生成11本の全デコードと動画仕様の検査がPASS |
+
+配布ファイルの検査結果は [repository_verification.json](repository_verification.json) に収録しています。別の試験用コピーから原本MP4を1本除いた場合にも、検査が欠落ファイルを報告し、終了コード1になることを確認しました。
 
 ## 未実施・再現上の制約
 
 - 新しいGPUモデル推論は未実施です。
 - 実シミュレータを使った物理再生は未実施です。ダミー環境のテストを、物理軌道の再現成功とは扱いません。
-- DaVinci Resolve本体への取り込み・書き出し操作は未実施です。汎用的なH.264 MP4を出力しています。
+- 字幕・音声・DaVinci Resolveのプロジェクト、および編集後の完成版動画は、この検証の対象に含みません。
 - 収録時の追加学習済み重みは同梱していません。公開ベースモデルから同じ動作を得ることは保証しません。
 - 元映像の解像度は128×128であり、1080p出力に拡大しても情報量は増えていません。

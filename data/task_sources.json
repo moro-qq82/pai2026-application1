@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/sylvestf/LIBERO-plus",
+  "commit": "4976dc30028e805ff8094b55501d532c48fec182",
+  "verified_date": "2026-10-24",
+  "verification": "All seven public task definitions were retrieved at the pinned commit and their UTF-8 content SHA-256 values matched the recorded metadata.",
+  "task_definitions_bundled": false,
+  "tasks": [
+    {
+      "bddl_relative_path": "libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_table_2.bddl",
+      "sha256": "a179e2de2f656f27ade68fe9e4892bafd49b6f354dc78de8a4bfae1f142cc5e4",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_table_2.bddl",
+      "case_ids": [
+        "diag_t00_s00"
+      ]
+    },
+    {
+      "bddl_relative_path": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_27.bddl",
+      "sha256": "9727c6aafc957c565aaac2d9fcc8d0e0e4bab7865ee213bc1b391887e976ec1a",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_27.bddl",
+      "case_ids": [
+        "diag_t01_s00",
+        "diag_t01_s03"
+      ]
+    },
+    {
+      "bddl_relative_path": "libero_object/pick_up_the_milk_and_place_it_in_the_basket_light_15.bddl",
+      "sha256": "21cd0eeefe853b9a4d6530bfc33a0c64f843c0e670ff2e39e83b60884ce218d1",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket_light_15.bddl",
+      "case_ids": [
+        "diag_t02_s00"
+      ]
+    },
+    {
+      "bddl_relative_path": "libero_goal/put_the_bowl_on_the_stove_light_11.bddl",
+      "sha256": "fc44642dc279e08e881e6bdc05e81cd4bfd40d7638639166dfeea30855517c19",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_goal/put_the_bowl_on_the_stove_light_11.bddl",
+      "case_ids": [
+        "diag_t03_s00"
+      ]
+    },
+    {
+      "bddl_relative_path": "libero_goal/open_the_top_drawer_and_put_the_bowl_inside_light_26.bddl",
+      "sha256": "5fa7436d009956e3ef3da6c339d138bfd4e248c07fe26c2fc8415febe426acc4",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside_light_26.bddl",
+      "case_ids": [
+        "diag390_t12_e118"
+      ]
+    },
+    {
+      "bddl_relative_path": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket_table_3.bddl",
+      "sha256": "a5dbad3bca75114474e426ca6795cfea6fddb2e4d3eaff3dcceabc8242a4a864",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket_table_3.bddl",
+      "case_ids": [
+        "diag390_t23_e223"
+      ]
+    },
+    {
+      "bddl_relative_path": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_39.bddl",
+      "sha256": "8164b8a16386ff8e9cecb8b6dee9c843924122fad737a0f84a351bbb44929b38",
+      "url": "https://github.com/sylvestf/LIBERO-plus/blob/4976dc30028e805ff8094b55501d532c48fec182/libero/libero/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_39.bddl",
+      "case_ids": [
+        "diag390_t23_e225"
+      ]
+    }
+  ]
+}
